@@ -36,8 +36,8 @@ nav a {
 	height: 60px;
 	background: #ebebeb;
 	position: absolute;
-	bottom: -40px;
-	transform: rotateZ(-2deg);
+	bottom: -46px;
+	transform: rotateZ(-1deg);
 	z-index: -1;
 }
 #clientes-box{
