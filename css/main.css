@@ -28,6 +28,7 @@ nav a {
 #clientes{
 	background: #ebebeb;
 	position: relative;
+	padding: 100px;
 }
 
 #clientes::after{
@@ -39,7 +40,18 @@ nav a {
 	bottom: -46px;
 	transform: rotateZ(-1deg);
 	z-index: -1;
+	left: 0px;
+	
 }
 #clientes-box{
 	border: solid 1px #333;
+	padding: 64px;
+	
+}
+#destaque-2{
+	padding: 100px;
+}
+#button{
+	margin: 50px;
+	padding: 12px;
 }
