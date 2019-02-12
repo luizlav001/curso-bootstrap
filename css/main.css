@@ -40,6 +40,10 @@ nav a:not(.btn-green):hover {
 	color: white;
 	box-shadow: 0 5px 14px 0 rgba(34, 198, 105, 0.6)
 }
+.btn-disabled{
+	pointer-events: none;
+	opacity: .6;
+}
 #destaque{
 	padding-bottom: 100px;
 }
