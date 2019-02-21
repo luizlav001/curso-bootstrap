@@ -1,14 +1,47 @@
-/*@media (max-width: 575px){
-	h1{
-		text-align: center;
-	}
-	nav.float-right{
-		float: none !important;
-		text-align: center;
-	}
-}*/
+body {
+	font-family: pt sans, arial, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: poppins;
+	font-weight: 600;
+}
 #header{
+	/*height: 104px;*/
 	margin-bottom: 60px;
+}
+.navbar-toggler {
+	padding: 0;
+	width: 50px;
+	height: 50px;
+	position: relative;
+}
+.burger {
+	width: 40px;
+	height: 4px;
+	background:#333;
+	font-size: 0;
+	position: relative;
+	border-radius: 5px;
+	top: 21px;
+	left: 4px;
+}
+.burger::before {
+	content: "";
+	width: 40px;
+	height: 4px;
+	background: #333;
+	position: absolute;
+	top: -10px;
+	border-radius: 5px;
+}
+.burger::after {
+	content: "";
+	width: 40px;
+	height: 4px;
+	background: #333;
+	position: absolute;
+	top: 10px;
+	border-radius: 5px;
 }
 
 h1{
@@ -16,10 +49,34 @@ h1{
 	line-height: 50px;
 }
 
-nav a {
-	font-size: 18px;
+nav a:not(.btn-green) {
+	font-family: poppins;
+	font-size: 15px;
 	text-transform: uppercase;
 	line-height: 50px;
+	color: #121213;
+	transition: transform 200ms ease;
+}
+nav a:not(.btn-green):hover {
+	text-decoration: none;
+	color: #121213;
+	transform: translate(0, -5px);
+}
+.btn-green{
+	background-color: #22c669;
+	color: white;
+	font-family: poppins;
+	font-weight: 600;
+	text-transform: uppercase;
+	box-shadow: 0 2px 5px 0 rgba(33,44,66,.15);	
+}
+.btn-green:hover {
+	color: white;
+	box-shadow: 0 5px 14px 0 rgba(34, 198, 105, 0.6)
+}
+.btn-disabled{
+	pointer-events: none;
+	opacity: .6;
 }
 #destaque{
 	padding-bottom: 100px;
@@ -28,7 +85,7 @@ nav a {
 #clientes{
 	background: #ebebeb;
 	position: relative;
-	padding: 100px;
+	padding: 100px 0;
 }
 
 #clientes::after{
@@ -44,14 +101,47 @@ nav a {
 	
 }
 #clientes-box{
-	border: solid 1px #333;
-	padding: 64px;
-	
+	padding: 40px;
+	border: solid 1px #c2c5cc;
+	border-radius: 12px;
+	position: relative;
+	text-align: center;
+	margin-bottom: 100px;
 }
-#destaque-2{
-	padding: 100px;
+#clientes-box .title{
+	position: absolute;
+	font-size: 16px;
+	top: -10px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	display: inline-block;
+	width: 180px;
+	text-align: center;
+	background: #ebebeb;
+	text-transform: uppercase;
 }
-#button{
+#clientes-box img{
+	opacity: 0.7;
+	width: 160px;
+	margin: 10px 0;
+	transition: opacity 200ms ease;
+}
+#clientes-box img:hover {
+	opacity: 1;
+}
+
+#vendas img{
 	margin: 50px;
-	padding: 12px;
+}
+#vendas_collapse{
+	margin: 0;
+}
+#vendas_collapse + a{
+	display: inline-block;
+	margin-top: 1rem;
+}
+
+.feature{
+	margin: 100px 0;
 }
