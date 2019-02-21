@@ -1,9 +1,9 @@
 // setTimeout(function(){
-// 	$("#cadastro_modal").modal('show');
-// }, 1000)
+// 	$("#cadastro_modal").modal("show");
+// }, 100)
 
-//setTimeout(function(){
-//	$("#cadastro_modal").modal('hide');
+// setTimeout(function(){
+// 	$("#cadastro_modal").modal("hide");
 // }, 5000)
 
 $('#vendas_collapse').on('show.bs.collapse', function () {
