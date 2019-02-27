@@ -24,3 +24,16 @@ $(window).on("scroll", function(){
 	$("#header_shadow").css("top", (distanciaDoTopo / 10) + "px")
 
 })
+
+var opcoesSR = {
+	delay: 300,
+	duartion: 1500,
+	origin: 'bottom',
+	distance: '50px',
+	viewOffset: {
+		bottom: 240
+	}
+}
+
+ScrollReveal().reveal('#clientes-box', opcoesSR)
+ScrollReveal().reveal('.feature', opcoesSR)
