@@ -1,6 +1,6 @@
-// setTimeout(function(){
-// 	$("#cadastro_modal").modal("show");
-// }, 100)
+setTimeout(function(){
+	$("#cadastro_modal").modal("show");
+}, 100)
 
 // setTimeout(function(){
 // 	$("#cadastro_modal").modal("hide");
@@ -37,3 +37,17 @@ var opcoesSR = {
 
 ScrollReveal().reveal('#clientes-box', opcoesSR)
 ScrollReveal().reveal('.feature', opcoesSR)
+
+$(function() {
+	$('[data-toggle="tooltip"]').tooltip()
+})
+
+$("#salvar_cadastro").on("click", function(){
+	var valorNome = $("#input_nome").val()
+
+	if (valorNome.length > 0){
+		$(".alert.alert-success").show()
+	} else {	
+		$(".alert.alert-warning").show()
+	}
+})
